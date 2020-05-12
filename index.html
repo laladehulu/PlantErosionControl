@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Plants</title>
+  <meta name="description" content="PARROT!">
+  <meta name="author" content="Devin">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <template id ="mustache-plant">
+        <div class="plant-display">
+                    
+        <div class="plant-display-photo" style= "background-image:url('{{picture}}');"></div>  <p class="plant-display-text text-appear">{{name}}</p>  </div>
+      </template>
+      <template id ="mustache-info">
+        <p>type <span>{{class}}</span></p>
+        <p>Height: <span>{{height}}</span></p>
+        <p>
+        Info:{{description}}
+        </p>
+      </template>
+
+</head>
+
+<body>
+
+    <h1 class="plant-display-text">What Plant is For You?</h1>
+    
+
+    <div class="">
+
+      <div class="main-app">
+        <div class="input-container">
+                <div data-feature="slope" class="input-div">
+                      <label for="">Slope</label>
+                      <p><span class="portrayal"></span>cm</p>
+                      <input type="range" min="0" id="slope-slider" max="100">
+                </div>
+                <div data-feature="height" class="input-div">
+                    <label for="">Height Maximum</label>
+                    <p><span class="portrayal"></span></p>
+                    <input type="range" min="0" id="slope-slider" max="100">
+                </div>
+                <div data-feature="zone" class="input-div">
+                  <label for="">USDA Plant Hardiness Zone</label>
+                  <p><span class="portrayal"></span></p>
+                  <input type="range" min="0" id="slope-slider" max="100">
+              </div>
+        </div>
+        <div class="display-container">
+             
+        </div>
+        <div class="information-container">
+       
+          <p>hello</p>
+        </div>
+      
+      </div>
+  
+    </div>
+
+   
+  <script src="main.js"></script>
+</body>
+</html>
